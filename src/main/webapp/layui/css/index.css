@@ -1,0 +1,531 @@
+/*
+ * 通用选择器一般用它来清空默认标签的样式
+ */
+*{
+		/*
+	 * 边框改成0
+	 */
+	margin:0;
+	padding:0;
+	list-style: none;
+	color:black;
+	}
+	/*i{*/
+	/*	background-color: white;*/
+	/*}*/
+	/*#top{*/
+	/*	background-color: black;*/
+	/*	color:white;*/
+	/*	height:30px;*/
+	/*	font-size: 13px;*/
+	/*	z-index: 1000;*/
+	/*}*/
+	a{
+	cursor: pointer;
+	}
+	/*#top .wrapper{*/
+	/*	width:1190px;*/
+	/*	!**/
+	/*	 * 设置居中*/
+	/*	 *!*/
+	/*	margin:0 auto;*/
+	/*	height: 30px;*/
+	/*}*/
+	a:link{color:black;}
+	a:hover{color:red;}
+	a:visited{color:black;}
+	/*
+	 * 所有class为toptext-的a标签字体变白色
+	 */
+	a[class|="toptext"]{
+		color:white;
+	}
+	/*
+	 * 把所有a标签和li标签属性取消
+	 */
+	li,a{
+				list-style: none;
+				text-decoration:none;
+
+			}
+	/*a:hover{*/
+	/*	color:red;*/
+	/*}*/
+	  /*ul.my-sephora-list .list-first{*/
+	  /*	cursor:no-drop;*/
+	  /*}*/
+	  /*ul.my-sephora-list .list-first .toptext-6{*/
+	  /*	border: solid #C8C8C8;*/
+	  /*}*/
+	  /*ul.my-sephora-list .list-first .toptext-6{*/
+		/*
+		 * 设置不可见
+		 */
+		/*display:none;*/
+		/*text-align: center;*/
+        /*      }	*/
+/*        i.fa-caret-down*/
+/*        {*/
+/*        	cursor: pointer;*/
+/*        }*/
+/*      */
+/*      ul.my-sephora-list .list-first:hover .toptext-6{*/
+/*       	display:block;*/
+/*		color:black;*/
+/*		background-color: white;*/
+/*		height:30px;*/
+/*		width:auto;*/
+/*		*/
+/*       } */
+/*       ul.my-sephora-list .list-first .toptext-6:hover{*/
+/*       	color:red;*/
+/*       }*/
+/*       a.toptext-1{*/
+/*       	cursor:text;*/
+/*       }*/
+/*      #top{*/
+/*       	position:relative;*/
+/*       	width:100%;*/
+/*       	height:30px;*/
+/*       }	*/
+/*	#top .top-left{*/
+/*		width:auto;*/
+/*		height:30px;*/
+/*		line-height: 30px;*/
+/*	    float: left;*/
+/*	}*/
+/*	#top .top-left span.top-left-span span{*/
+/*		margin:0 20px;*/
+/*	}*/
+/*	#top .top-left>span{*/
+/*		margin-right: 20px;*/
+/*	}*/
+/*	#top .top-right{*/
+/*		width:auto;*/
+/*		height:30px;*/
+/*		line-height: 30px;*/
+/*		float: right;*/
+/*	}*/
+/*	#top .top-right  span, li{*/
+/*		float:left;*/
+/*		margin-left: 20px;*/
+/*	}*/
+/*	#top .top-right  li a.toptext-7{*/
+/*		margin-right: 20px;*/
+/*	}*/
+/*	#top .top-right  li.list-second a{*/
+/*		margin: 0;*/
+/*		text-align: center;*/
+/*			}*/
+/*	#top .top-right  li.list-second a, a:focus, a:hover{*/
+/*		text-decoration:none;*/
+/*	}*/
+/*	*/
+/*	#top .top-right  li.list-second{*/
+/*		display: list-item;*/
+/*	}*/
+/*	#search{*/
+/*		position:relative;*/
+/*       	width:100%;*/
+/*		margin: 0 auto;*/
+/*	}*/
+/*	#search .search-info-content{*/
+/*		padding:24px 0 0;*/
+/*		width:1190px;*/
+/*		height:60px;*/
+/*		margin:0 auto;*/
+/*		z-index: 100;*/
+/*		!*position relative;*!*/
+/*	}*/
+/*	#search .search-info-content .search-logo{*/
+/*	position: relative;*/
+/*	width:320px;*/
+/*	height: 36px;*/
+/*	display: inline	;*/
+/*	float:left;*/
+/*		}*/
+/*	#search .search-info-content .search-logo a{*/
+/*		position: relative;*/
+/*		margin: 1px 0;*/
+/*		height:32px;*/
+/*		float:left;*/
+/*		}*/
+/*	#search .search-info-content .search-info-content-wrap{*/
+/*		height: 60px;*/
+/*		position:relative;*/
+/*		margin: 0 auto;*/
+/*		float:left;*/
+/*	}*/
+/*	#search .search-info-content .search-info-content-wrap .inputbox{*/
+/*		position: relative;*/
+/*		z-index:10;*/
+/*		width:700px;*/
+/*		height:36px;*/
+/*		display: inline-block;*/
+/*	}*/
+/*	#search .search-info-content .search-info-content-wrap .inputbox .search-main{*/
+/*		width:540px;*/
+/*		border: 1.5px solid #c8c8c8;*/
+/*		height:34px;*/
+/*		background-color: white;*/
+/*		float:left;*/
+/*		cursor: text;*/
+/*			}*/
+/*	.search-main input{*/
+/*		width:540px;*/
+/*		height:34px;*/
+/*		border: none;*/
+/*		padding: 0;*/
+/*	}*/
+/*	.inputbox .search-submit{*/
+/*		position: relative;*/
+/*		float:left;*/
+/*		width:80px;*/
+/*		height:34px;*/
+/*		border:1px solid black;*/
+/*		background-color: black;*/
+/*		border-left:0;*/
+/*		border-right: 0;*/
+/*		cursor: pointer;*/
+/*		color:white;*/
+/*		font-size:16px;*/
+/*		text-align: center;*/
+/*		line-height:34px;*/
+/*			}*/
+/*	#search ul.search-hotword{*/
+/*		padding:0 2px;*/
+/*		position: relative;*/
+/*		z-index:1;*/
+/*		margin-left: -5px;*/
+/*	    font-size:12px;*/
+/*	    color:#acacac;*/
+/*	}*/
+/*	#search ul a{*/
+/*		margin-left: 10px;*/
+/*	}*/
+/*   #search .minicart{*/
+/*   	position: absolute;*/
+/*   	width:188px;*/
+/*   	height:34px;*/
+/*   	border: 1px solid #C8C8C8;*/
+/*   	background-color: white;*/
+/*   	font-size:16px;*/
+/*   	color:#666;*/
+/*   	text-align:center;*/
+/*   	float:right;*/
+/*   	z-index:10;*/
+/*   	display:inline;*/
+/*   	margin:0 auto;*/
+/*   }*/
+/*   #search .minicart div{*/
+/*   	padding-top: 5px;*/
+/*   	vertical-align: middle;*/
+/*   }*/
+/*   #Navigation{*/
+/*   	min-width:1190px;*/
+/*   	position: relative;*/
+/*   	z-index:10;*/
+/*   	margin: 0 auto;*/
+/*   	display: block;*/
+/*   	margin-top:10px;*/
+/*   }*/
+/*   */
+/*   #Navigation .navigation-info{*/
+/*   	width:100%;*/
+/*   	*/
+/*   }*/
+/*   #Navigation .navigation-info .navigation-content{*/
+/*   	width:1190px;*/
+/*   	margin:0 auto;*/
+/*   	position: relative;*/
+/*   	height:36px;*/
+/*   }*/
+/*   .navigation-content-menu{*/
+/*   	float:left;*/
+/*   	width:240px;*/
+/*   	height:36px;*/
+/*   	height:36px;*/
+/*   	background: url("https://ssl1.sephorastatic.cn/soa/pc/images/classified.png");*/
+/*   	background-size:100% 100%;*/
+/*   	align-content: center;*/
+/*   }*/
+/*   .navigation-content-menu div{*/
+/*   	padding: 3px;*/
+/*	float:left;*/
+/*   	width:240px;*/
+/*   	height:36px;*/
+/*   	!*line:height:36px;*!*/
+/*}*/
+/*   a.navigation-content-link{*/
+/*   	color:white;*/
+/*   	margin-left:50px;*/
+/*   	font-size:20px;*/
+/*   	!*font-weight:550px;*!*/
+/*   	*/
+/*   }*/
+/*   .navigation-content-menu-list{*/
+/*   	width:240px;*/
+/*   	height:auto;*/
+/*   	float:left;*/
+/*   	position: relative;*/
+/*   }*/
+/*   .navigation-content-menu-list ul{*/
+/*   	padding-left: 0;*/
+/*   	height: 480px;*/
+/*   	outline: 0;*/
+/*   	border: solid 1px #C8C8C8;*/
+/*   }*/
+/*   .navigation-content-menu-list ul li{*/
+/*   	padding:20px 0 8px 0px;*/
+/*   	display: block;*/
+/*   	line-height: 20px;*/
+/*   	border-bottom: 1px solid #f5f5f5;*/
+/*   	position: relative;*/
+/*   	vertical-align: middle;*/
+/*   	cursor: pointer;*/
+/*   	width:200px;*/
+/*   	height:40px;*/
+/*   	!*font-weight:450px;*!*/
+/*   	font-size: 18px;*/
+/*    vertical-align: middle;*/
+/*    text-align: center;*/
+/*   }*/
+/*   .navigation-content-menu-list ul li:last-child{*/
+/*   	border-bottom: 1px solid #FFFFFF;*/
+/*   	margin-top: 1px;*/
+/*   }*/
+/*   .navigation-content .navigation-content-quick{*/
+/*   	min-width:760px;*/
+/*   	float:left;*/
+/*   	height:36px;*/
+/*   	line-height: 42px;*/
+/*   }*/
+/*  .hero{*/
+/*  	min-width:1190px;*/
+/*  	height:480px;*/
+/*  	background-color:whitesmoke;*/
+/*  	position:relative;*/
+/*  	margin:50px auto;*/
+/*  }*/
+/*	img {*/
+/*	            vertical-align: top;*/
+/*	        }*/
+/*	.hero-info {*/
+/*	            width: auto;*/
+/*	            height: 480px;*/
+/*	            position: relative;*/
+/*	            margin-top: 10px;*/
+/*	            margin-left: 600px;*/
+/*	        }*/
+/*	        .hero-info img {*/
+/*	            width: 950px;*/
+/*	            height: 480px;*/
+/*	        }*/
+/*	 */
+/*	 		.hero-info img:hover{*/
+/*	 			cursor: pointer;*/
+/*	 		}*/
+/*	        .showBox li {*/
+/*	            display: none;*/
+/*	        }	*/
+/*	        .showBox .show {*/
+/*	            display: block;*/
+/*	        }	 	*/
+/*	        .dotBox {*/
+/*	            overflow: hidden;*/
+/*	            position: absolute;*/
+/*	            bottom: 20px;*/
+/*	            margin-left: 30px;*/
+/*	        }*/
+/*	 */
+/*	  .dotBox li {*/
+/*	            width: 30px;*/
+/*	            height: 30px;*/
+/*	            background-color: #fff;*/
+/*	            border-radius: 50%;*/
+/*	            float: left;*/
+/*	            margin-left: 10px;*/
+/*	            text-align: center;*/
+/*		       line-height: 30px;*/
+/*	        }*/
+/*	        */
+/*	        .dotBox li:hover{*/
+/*	        	cursor: pointer;*/
+/*	        }*/
+/*	        .dotBox .active {*/
+/*	            background-color: #f65;*/
+/*	            color: white;*/
+/*	        }*/
+/*			*/
+/*#brand{*/
+/*	margin-top: 80px;*/
+/*	min-width: 1190px;*/
+/*}*/
+/*.brand-title{*/
+/*	height:36px;*/
+/*	margin:10px 0;*/
+/*	margin-bottom: 3px;*/
+/*	*/
+/*}*/
+/*.brand-title .brand-title-content{*/
+/*	width:1190px;*/
+/*	margin: 0 auto;*/
+/*	height:36px;*/
+/*	position: relative;*/
+/*}*/
+
+/*.brand-title .brand-title-content>h2{*/
+/*	float: left;*/
+/*	width:287px;*/
+/*    height:36px;*/
+/*    */
+/*}*/
+/*.brand-title .brand-title-content ul{*/
+/*	float: right;*/
+/*	height: 36px;*/
+/*	position: absolute;*/
+/*	right: 0;*/
+/*	bottom:-7px ;*/
+/*}*/
+/*.brand-title .brand-title-content ul li{*/
+/*	display: inline-block;*/
+/*	line-height: 36px;*/
+/*	cursor: pointer;*/
+/*}*/
+/*.brand-body{*/
+/*height: 317px;*/
+/*margin-bottom: 80px;*/
+/*}*/
+/*.brand-body-conntent{*/
+/*height: 320px;*/
+/*width:1190px;*/
+/*margin:0 auto;*/
+/*}*/
+/*.brand-body-conntent .hero-info-carousel-floatL{*/
+/*width: 590px;*/
+/*height: 320px;*/
+/*overflow: hidden;*/
+/*position: relative;*/
+/*display: inline;*/
+/*float: left;*/
+/*z-index: 1;*/
+/*margin-top:5px;*/
+/*margin-left:-20px ;*/
+/*}*/
+/*.brand-body-conntent .hero-info-carousel-floatR{*/
+/*width: 600px;*/
+/*height:320px;*/
+/*display: block;*/
+/*position: relative;*/
+/*float: right;*/
+/*}*/
+/*.brand-body-conntent .hero-info-carousel-floatR ul{*/
+/*opacity: 1;*/
+/*z-index:10;*/
+/*display: block;*/
+/*position: absolute;*/
+/*height:320px;*/
+/*}*/
+/*.brand-body-conntent .hero-info-carousel-floatR ul li{*/
+/*width:290px;*/
+/*height:150px;*/
+/*border-right: 1px solid #F5F5F5;*/
+/*border-bottom: 1px solid #F5F5F5;*/
+/*display: inline;*/
+/*overflow: hidden;*/
+/*position: relative;*/
+/*background-color: white;*/
+/*margin-left:8px;*/
+/*margin-top: 5px;*/
+/*}*/
+/*.brand-body-conntent .hero-info-carousel-floatR a{*/
+/*width:288px;*/
+/*height:120px;*/
+/*display: inline-block;*/
+/*margin: 5px auto;*/
+/*vertical-align: middle;*/
+/*}*/
+/*.brand-body-conntent .hero-info-carousel-floatR a img{*/
+/*width:100%;*/
+/*height:100%;*/
+/*}
+
+    /*
+     * 尾部以important结尾
+     */
+    .guess{
+    	min-width: 1190px;
+    	height: auto;
+    	margin: 0 auto;
+		margin-bottom:40px;
+    }
+    .guess-like{
+    	width: 1190px;
+    	height:36px;
+    	margin:35px 0 0 500px;
+    	margin-bottom: 50px;
+    	position: relative;
+    	float: left;
+    	display: block;
+    }
+    .guess .category{
+    	width:100%;
+    	height:1100px;
+    }
+    .guess .category .wrapper{
+    	background-color: white;
+    	width:1190px;
+    	margin:0 auto;
+    	min-height: 300px;
+    	/*border-top: 1px solod #f7f7f7;*/
+    	border-left: 1px solid #F7F7F7;
+    	
+    	    } 
+    .guess .category .wrapper ul{
+    	width:100%;
+    	heigth:auto;
+    }
+    .guess .category .wrapper ul li{
+    	width:200px;
+    	height:259px;
+    	/*border-top: 1px solod #f7f7f7;*/
+    	border-left: 1px solid #F7F7F7;
+    	display: inline-block;
+    	margin-left: 10px;
+    	margin-right: 15px;
+		margin-bottom: 30px;
+
+    	}
+.guess .category .wrapper ul li a div{
+	text-align: center;
+}
+    /*#Footer{*/
+    /*	margin-top: 100px;*/
+    /*	width:100%;*/
+    /*	z-index: 0;*/
+    /*}*/
+    /*#footer-map{*/
+    /*	min-height: 150px;*/
+    /*	padding: 30px 0 50px;*/
+    /*	width:1190px;*/
+    /*	margin: 0 auto;*/
+    /*	border-top:2px solid #000000;*/
+    /*	    }*/
+    /*#footer-map li{*/
+    /*	width:190px;*/
+    /*	line-height:24px;*/
+    /*	display: inline-block;*/
+    /*	vertical-align: top;*/
+    /*}*/
+    /*#footer-map ul li a span{*/
+    /*	font-size: 16px;*/
+    /*	display: block;*/
+    /*	height: 26px;*/
+    /*}*/
+    /*#footer-map li.last-li{*/
+    /*	width:220px;*/
+    /*}*/
+    /*#Footer #footer-map ul li a span[class$="important"]{*/
+    /*	font-weight: 700;*/
+    /*	font-family: "微软雅黑";*/
+    /*}*/
